@@ -1,0 +1,416 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Section */
+.header {
+    text-align: center;
+    background-color: #d059d2;
+    color: white;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.header h2 {
+    font-size: 28px;
+}
+
+/* About Me Section */
+.about-me {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.about-me ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-me ul li {
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+/* Profile Picture */
+.profile-picture {
+    text-align: center;
+    padding: 20px;
+    flex:1;
+    text-align:center;
+}
+
+.profile-picture img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 4px solid rgb(224, 111, 224);
+    flex:1;
+    text-align:center;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Career Goals */
+.career-goals {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.career-goals ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Travel Video */
+.travel {
+    text-align: center;
+    padding: 20px;
+}
+
+.travel video {
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+/* Semester Results Table */
+.semester-results {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.semester-results table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.semester-results th, .semester-results td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.semester-results th {
+    background-color: rgb(210, 93, 199);
+    color: white;
+}
+
+/* Links Section */
+.links {
+    padding: 20px;
+    text-align: center;
+}
+
+.links a {
+    color:rgb(61, 132, 238);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+.contact-info {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info a {
+    color:rgba(12, 234, 237, 0.949);
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-me, .career-goals, .semester-results, .contact-info {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .profile-picture img {
+        width: 150px;
+        height: 150px;
+    }
+}
+.about-container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 20px; 
+    padding: 20px;
+    
+}
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+th {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    text-transform: uppercase;
+}
+
+/* Style table rows */
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Alternate row colors */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover effect */
+tr:hover {
+    background-color: #d6e4ff;
+    transition: 0.3s;
+}
+
+/* Responsive table */
+@media screen and (max-width: 768px) {
+    table {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+/* Header Styling */
+.header {
+    background: linear-gradient(to right, #ea00ff, #00c6ff); /* Cool blue gradient */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 0 0 20px 20px; /* Rounded bottom edges */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Styling for the name */
+.header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* Styling for the welcome text */
+.header h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/* Styling for the paragraph */
+.header p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* Cool hover effect */
+.header:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .header h1 {
+        font-size: 2.5rem;
+    }
+    .header h2 {
+        font-size: 1.5rem;
+    }
+    .header p {
+        font-size: 1rem;
+    }
+}
+
+/* Career Goals Section */
+.career-goals {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    color: white;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Career Goals Title */
+.career-goals h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Career Goals Description */
+.career-goals p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+/* Career Goals Container */
+.goal-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Career Goal Cards */
+.goal-card {
+    width: 220px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    position: relative;
+    color: white;
+    font-weight: bold;
+}
+
+/* Individual Card Colors */
+.goal1 { background: #ff4b5c; }  /* Red */
+.goal2 { background: #ff914d; }  /* Orange */
+.goal3 { background: #ffc107; }  /* Yellow */
+.goal4 { background: #28a745; }  /* Green */
+.goal5 { background: #6f42c1; }  /* Purple */
+
+/* Career Goal Icons */
+.goal-card i {
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Career Goal Titles */
+.goal-card h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+/* Career Goal Descriptions */
+.goal-card p {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+/* Hover Effects */
+.goal-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .goal-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* FOOTER SECTION */
+.footer {
+    background: linear-gradient(to right, #c336ae, #31a4d2);
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+    border-radius: 20px 20px 0 0;
+    margin-top: 40px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: auto;
+}
+
+.footer-links, .footer-contact, .footer-social {
+    margin: 10px 0;
+}
+
+.footer h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #ffd700;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer a:hover {
+    color: #ffd700;
+}
+
+.footer-social a {
+    font-size: 1.8rem;
+    margin: 0 10px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
